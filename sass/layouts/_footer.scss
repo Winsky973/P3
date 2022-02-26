@@ -1,0 +1,13 @@
+.footer {
+    background-color: $color-footer;
+    color: white;
+    &__container {
+        &__list {
+            list-style: none;
+            margin-top: 1rem;
+            & li {
+                margin: .3em 0;
+            }
+        }
+    }
+}

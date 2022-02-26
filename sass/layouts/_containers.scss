@@ -1,0 +1,46 @@
+.box {
+    padding: 2rem 1.5rem;
+    &--colored {
+        background-color: $color-header_secondary;
+        position: relative;
+        top: -4rem;
+        border-radius: 2rem 2rem 0 0;
+    }
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.card {
+    border-radius: $border-radius;
+    padding: 2rem;
+    background-color: $color-header_secondary;
+    display: flex;
+    align-items: center;
+    @include shadow-primary;
+    &:hover {
+        background-color: lighten($color-primary, 35%);
+    }
+    &--white {
+        background-color: white;
+        padding: 1rem;
+        align-items: flex-start;
+        &:hover {
+            background-color: white;
+        }
+    }
+    &--simple {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 15rem;
+        padding: 0%;
+        margin-bottom: 1em;
+        &:hover {
+            background-color: white;
+        }
+    }
+}

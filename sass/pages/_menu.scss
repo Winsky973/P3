@@ -1,0 +1,62 @@
+.header {
+    &__informations--fix {
+        position: relative;
+        width: 100%;
+        z-index: -1;
+    }
+    &__informations .image {
+        width: 100%;
+        height: 18rem;
+    }
+}
+
+.menus {
+    &__grid {
+        &__heading {
+            & p {
+                @include border-decoration;
+            }
+        }
+        &__card {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 5;
+            &::before {
+                content: ' ';
+                position: absolute;
+                width: 4rem;
+                height: 10rem;
+                right: 0rem;
+                bottom: 0rem;
+                background-color: $color-tertiary;
+                z-index: 0;
+            }
+            &::after {
+                content: ' ';
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                right: 1rem;
+                bottom: 1.5rem;
+                border-radius: 50rem;
+                background-color: white;
+                z-index: 1;
+            }
+            & p {
+                font-size: .8em;
+                padding: .5rem 0;
+            }
+        }
+        &__prix {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

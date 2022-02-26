@@ -1,0 +1,19 @@
+{
+    "name": "projet_trois",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Winsky973/P3.git"
+    },
+    "author": "Winsky",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Winsky973/P3/issues"
+    },
+    "homepage": "https://github.com/Winsky973/P3#readme"
+}

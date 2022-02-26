@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    &__heading {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    &__location {
+        display: flex;
+        justify-content: center;
+        background-color: $color-heading;
+        padding: 1rem 0;
+        @include shadow-heading();
+    }
+    &__location i {
+        padding-right: 1em;
+        align-self: center;
+    }
+    &__reservation {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        background-color: $color-header_secondary;
+        &__texte {
+            padding: 1rem 0;
+        }
+    }
+    &__btn {
+        padding: 1rem;
+    }
+}
