@@ -8,8 +8,23 @@
     }
 }
 
+.container__btn {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
 .mb-1 {
     margin-bottom: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.informations {
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .card {
@@ -18,9 +33,13 @@
     background-color: $color-header_secondary;
     display: flex;
     align-items: center;
+    transition: background-color .5s;
     @include shadow-primary;
     &:hover {
         background-color: lighten($color-primary, 35%);
+    }
+    &:hover i {
+        color: $color-primary;
     }
     &--white {
         background-color: white;

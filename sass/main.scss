@@ -2,10 +2,12 @@
 @import "./base/typography";
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/fonctions";
 @import "./components/bouttons";
 @import "./components/heart";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/containers";
+@import "./layouts/keyframes.scss";
 @import "./pages/accueil";
 @import "./pages/menu";

@@ -12,6 +12,7 @@
 
 .menus {
     &__grid {
+        margin-top: 3rem;
         &__heading {
             & p {
                 @include border-decoration;
@@ -19,44 +20,64 @@
         }
         &__card {
             position: relative;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            flex-direction: column;
             overflow: hidden;
-            z-index: 5;
-            &::before {
-                content: ' ';
+            & span {
                 position: absolute;
                 width: 4rem;
                 height: 10rem;
                 right: 0rem;
                 bottom: 0rem;
+                transform: translateX(100%);
+                transition: transform .5s;
                 background-color: $color-tertiary;
                 z-index: 0;
+                &::before {
+                    content: ' ';
+                    position: absolute;
+                    width: 2rem;
+                    height: 2rem;
+                    right: 1rem;
+                    bottom: 1.5rem;
+                    border-radius: 50rem;
+                    background-color: white;
+                    z-index: 1;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 0 .3rem .3rem 0;
+                    border-color: $color-tertiary;
+                    transition: transform .4s ease-in-out;
+                    width: .7rem;
+                    z-index: 1;
+                    height: 1.2rem;
+                    right: 1.6rem;
+                    bottom: 1.9rem;
+                }
             }
-            &::after {
-                content: ' ';
-                position: absolute;
-                width: 2rem;
-                height: 2rem;
-                right: 1rem;
-                bottom: 1.5rem;
-                border-radius: 50rem;
-                background-color: white;
-                z-index: 1;
+            &:hover>span {
+                transform: translateX(0%);
             }
-            & p {
-                font-size: .8em;
-                padding: .5rem 0;
+            &:hover>span::after {
+                transform: rotate(400deg);
+            }
+            &:hover>.informations {
+                width: 80%;
             }
         }
         &__prix {
             width: 100%;
             display: flex;
+            white-space: nowrap;
             justify-content: space-between;
             align-items: center;
+            & p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: .8em;
+                padding: .5rem 0;
+            }
         }
     }
 }

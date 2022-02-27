@@ -1,0 +1,3 @@
+@mixin convertLinearGradient($color1, $color2) {
+    background-color: linear-gradient($color1, $color2);
+}

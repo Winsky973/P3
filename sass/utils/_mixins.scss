@@ -1,11 +1,15 @@
 @mixin btn {
     border: none;
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient($color-secondary, $color-primary);
     padding: 1rem;
     color: white;
-    @include shadow-primary();
+    cursor: pointer;
+    &:hover {}
     &--rounded {
         border-radius: 2rem;
+    }
+    &--large {
+        padding: 1rem 2rem;
     }
 }
 
