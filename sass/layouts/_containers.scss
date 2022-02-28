@@ -25,6 +25,7 @@
 .informations {
     text-overflow: ellipsis;
     width: 100%;
+    transition: width .4s ease-in-out;
 }
 
 .card {
