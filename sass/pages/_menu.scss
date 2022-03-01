@@ -11,6 +11,13 @@
 }
 
 .menus {
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        & h1 {
+            justify-content: flex-start;
+        }
+    }
     &__grid {
         margin-top: 3rem;
         &__heading {

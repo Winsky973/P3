@@ -39,9 +39,6 @@
     &:hover {
         background-color: lighten($color-primary, 35%);
     }
-    &:hover i {
-        color: $color-primary;
-    }
     &--white {
         background-color: white;
         padding: 1rem;
