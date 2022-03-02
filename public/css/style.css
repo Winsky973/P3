@@ -141,6 +141,12 @@ p {
   margin: 0.3em 0;
 }
 
+.container__btn {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
 .box {
   padding: 2rem 1.5rem;
 }
@@ -149,16 +155,6 @@ p {
   position: relative;
   top: -4rem;
   border-radius: 2rem 2rem 0 0;
-}
-
-.container__btn {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;
-}
-
-.mb-1 {
-  margin-bottom: 1rem;
 }
 
 .mb-1 {
@@ -173,23 +169,40 @@ p {
 
 .card {
   border-radius: 1rem;
-  padding: 2rem;
-  background-color: #f6f6f6;
+  background-color: white;
   display: flex;
   align-items: center;
-  transition: background-color 0.5s;
+  transition: background-color 0.5s ease-in-out;
   box-shadow: 0rem 0.5rem 0.9rem -0.5rem rgba(0, 0, 0, 0.26);
 }
 .card:hover {
   background-color: #f2eafb;
 }
+.card__image {
+  width: 100%;
+  height: 10rem;
+}
+.card__image img {
+  border-radius: 1rem 1rem 0 0;
+}
+.card__informations {
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__informations p {
+  margin: 0.5rem 0;
+}
+.card--colored {
+  background-color: #f6f6f6;
+  padding: 2rem;
+}
 .card--white {
-  background-color: white;
   padding: 1rem;
   align-items: flex-start;
-}
-.card--white:hover {
-  background-color: white;
 }
 .card--simple {
   width: 100%;
@@ -249,25 +262,6 @@ p {
 .grid__heading {
   margin: 0 0 1.5rem 0;
 }
-.grid__items__image {
-  width: 100%;
-  height: 10rem;
-}
-.grid__items__image img {
-  border-radius: 1rem 1rem 0 0;
-}
-.grid__items__informations {
-  width: 100%;
-  height: 5rem;
-  padding: 1rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.grid__items__informations p {
-  margin: 0.5rem 0;
-}
-
 .header__informations--fix {
   position: relative;
   width: 100%;

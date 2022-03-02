@@ -1,3 +1,9 @@
+.container__btn {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
 .box {
     padding: 2rem 1.5rem;
     &--colored {
@@ -6,16 +12,6 @@
         top: -4rem;
         border-radius: 2rem 2rem 0 0;
     }
-}
-
-.container__btn {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
-}
-
-.mb-1 {
-    margin-bottom: 1rem;
 }
 
 .mb-1 {
@@ -30,22 +26,39 @@
 
 .card {
     border-radius: $border-radius;
-    padding: 2rem;
-    background-color: $color-header_secondary;
+    background-color: white;
     display: flex;
     align-items: center;
-    transition: background-color .5s;
+    transition: background-color .5s ease-in-out;
     @include shadow-primary;
     &:hover {
         background-color: lighten($color-primary, 35%);
     }
+    &__image {
+        width: 100%;
+        height: 10rem;
+        & img {
+            border-radius: 1rem 1rem 0 0;
+        }
+    }
+    &__informations {
+        width: 100%;
+        height: 5rem;
+        padding: 1rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & p {
+            margin: .5rem 0;
+        }
+    }
+    &--colored {
+        background-color: $color-header_secondary;
+        padding: 2rem;
+    }
     &--white {
-        background-color: white;
         padding: 1rem;
         align-items: flex-start;
-        &:hover {
-            background-color: white;
-        }
     }
     &--simple {
         width: 100%;
