@@ -39,6 +39,9 @@
             }
             &:hover>.informations {
                 width: 80%;
+                @include mobile-only {
+                    width: 70%;
+                }
             }
         }
         &__prix {
@@ -47,6 +50,10 @@
             white-space: nowrap;
             justify-content: space-between;
             align-items: center;
+            & {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
             & p {
                 overflow: hidden;
                 text-overflow: ellipsis;

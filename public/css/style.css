@@ -46,6 +46,10 @@ h4 {
   font-weight: 200;
 }
 
+i {
+  font-size: 1.15rem;
+}
+
 p {
   font-size: 1rem;
   font-weight: 400;
@@ -162,9 +166,13 @@ p {
 }
 
 .informations {
-  text-overflow: ellipsis;
+  white-space: nowrap;
   width: 100%;
   transition: width 0.4s ease-in-out;
+}
+.informations h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card {
@@ -172,7 +180,7 @@ p {
   background-color: white;
   display: flex;
   align-items: center;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.1 0.7s ease-in-out;
   box-shadow: 0rem 0.5rem 0.9rem -0.5rem rgba(0, 0, 0, 0.26);
 }
 .card:hover {
@@ -200,13 +208,15 @@ p {
   background-color: #f6f6f6;
   padding: 2rem;
 }
+.card--colored:hover i {
+  color: #9356DC;
+}
 .card--white {
   padding: 1rem;
   align-items: flex-start;
 }
 .card--simple {
   width: 100%;
-  background-color: white;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -217,6 +227,57 @@ p {
 .card--simple:hover {
   background-color: white;
 }
+@media only screen and (min-width: 992px) {
+  .card--simple {
+    width: 22rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  .card--simple {
+    width: 28rem;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+  .card--simple {
+    width: 27rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 920px) {
+  .card--simple {
+    width: 26rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 888px) {
+  .card--simple {
+    width: 25rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 860px) {
+  .card--simple {
+    width: 23rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .card--simple {
+    width: 21.8rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+  .card--simple {
+    width: 20rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 692px) {
+  .card--simple {
+    width: 18rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 650px) {
+  .card--simple {
+    width: 17rem;
+  }
+}
 
 @keyframes slidein {
   from {
@@ -226,19 +287,41 @@ p {
     transform: translateX(100%);
   }
 }
+@media only screen and (min-width: 992px) {
+  .main-container {
+    display: flex;
+    margin-top: 2rem;
+  }
+}
+
+.fonction {
+  flex: 1;
+}
 .fonction__heading {
   margin: 0 0 1.5rem 0;
 }
 .fonction__grid {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   row-gap: 1.5rem;
+}
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  .fonction__grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  .fonction__grid__items {
+    margin-right: 1rem;
+  }
 }
 .fonction__grid__items p {
   margin-left: 1rem;
 }
 .fonction__grid__items i {
-  color: #5d5d5d;
+  color: #777777;
   align-items: center;
 }
 .fonction__grid__items__letter {
@@ -246,9 +329,10 @@ p {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 1rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  left: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
   background-color: #9356DC;
   border-radius: 50rem;
 }
@@ -257,11 +341,27 @@ p {
 }
 
 .grid {
+  flex: 2;
   background-color: #f6f6f6;
 }
 .grid__heading {
   margin: 0 0 1.5rem 0;
 }
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  .grid__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .grid__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .header__informations--fix {
   position: relative;
   width: 100%;
@@ -336,12 +436,21 @@ p {
 .menus__grid__card:hover > .informations {
   width: 80%;
 }
+@media (max-width: 599px) {
+  .menus__grid__card:hover > .informations {
+    width: 70%;
+  }
+}
 .menus__grid__prix {
   width: 100%;
   display: flex;
   white-space: nowrap;
   justify-content: space-between;
   align-items: center;
+}
+.menus__grid__prix {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menus__grid__prix p {
   overflow: hidden;

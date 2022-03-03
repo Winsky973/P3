@@ -19,9 +19,13 @@
 }
 
 .informations {
-    text-overflow: ellipsis;
+    white-space: nowrap;
     width: 100%;
     transition: width .4s ease-in-out;
+    & h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 .card {
@@ -29,7 +33,7 @@
     background-color: white;
     display: flex;
     align-items: center;
-    transition: background-color .5s ease-in-out;
+    transition: background-color .1.7s ease-in-out;
     @include shadow-primary;
     &:hover {
         background-color: lighten($color-primary, 35%);
@@ -55,6 +59,9 @@
     &--colored {
         background-color: $color-header_secondary;
         padding: 2rem;
+        &:hover i {
+            color: $color-primary;
+        }
     }
     &--white {
         padding: 1rem;
@@ -62,7 +69,6 @@
     }
     &--simple {
         width: 100%;
-        background-color: white;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -71,6 +77,37 @@
         margin-bottom: 1em;
         &:hover {
             background-color: white;
+        }
+        @include desktop-only {
+            width: 22rem;
+        }
+        @include tablette-only (991px) {
+            width: 28rem;
+            margin-bottom: 2rem;
+        }
+        @include tablette-only(950px) {
+            width: 27rem;
+        }
+        @include tablette-only(920px) {
+            width: 26rem;
+        }
+        @include tablette-only(888px) {
+            width: 25rem;
+        }
+        @include tablette-only(860px) {
+            width: 23rem;
+        }
+        @include tablette-only(800px) {
+            width: 21.8rem;
+        }
+        @include tablette-only(750px) {
+            width: 20rem;
+        }
+        @include tablette-only(692px) {
+            width: 18rem;
+        }
+        @include tablette-only(650px) {
+            width: 17rem;
         }
     }
 }
