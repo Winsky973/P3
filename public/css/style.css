@@ -145,6 +145,18 @@ p {
   margin: 0.3em 0;
 }
 
+@media only screen and (min-width: 992px) {
+  .main-container {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-container--menus {
+    margin-top: 0;
+    transition: all 2s ease-out;
+  }
+}
+
 .container__btn {
   display: flex;
   justify-content: center;
@@ -164,6 +176,10 @@ p {
   .box--colored {
     margin: 0 15rem;
   }
+}
+
+.mt-2 {
+  margin-top: 2rem;
 }
 
 .mb-1 {
@@ -193,7 +209,7 @@ p {
 }
 .card__image {
   width: 100%;
-  height: 10rem;
+  height: 60%;
 }
 .card__image img {
   border-radius: 1rem 1rem 0 0;
@@ -233,14 +249,12 @@ p {
   height: 15rem;
   padding: 0%;
   margin-bottom: 1em;
+  /*@include desktop-only {
+      width: 22rem;
+  }*/
 }
 .card--simple:hover {
   background-color: white;
-}
-@media only screen and (min-width: 992px) {
-  .card--simple {
-    width: 22rem;
-  }
 }
 @media only screen and (min-width: 600px) and (max-width: 991px) {
   .card--simple {
@@ -371,11 +385,16 @@ p {
     justify-content: space-between;
   }
 }
+@media only screen and (min-width: 992px) {
+  .grid__items__container {
+    width: 33%;
+  }
+}
 
 @media only screen and (min-width: 992px) {
   .menus {
     display: block;
-    margin-top: -4rem;
+    margin-top: -5rem;
     width: 100%;
   }
 }
