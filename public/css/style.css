@@ -160,6 +160,11 @@ p {
   top: -4rem;
   border-radius: 2rem 2rem 0 0;
 }
+@media only screen and (min-width: 992px) {
+  .box--colored {
+    margin: 0 15rem;
+  }
+}
 
 .mb-1 {
   margin-bottom: 1rem;
@@ -214,6 +219,11 @@ p {
 .card--white {
   padding: 1rem;
   align-items: flex-start;
+}
+@media only screen and (min-width: 992px) {
+  .card--white {
+    height: 5rem;
+  }
 }
 .card--simple {
   width: 100%;
@@ -362,6 +372,14 @@ p {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .menus {
+    display: block;
+    margin-top: -4rem;
+    width: 100%;
+  }
+}
+
 .header__informations--fix {
   position: relative;
   width: 100%;
@@ -370,6 +388,16 @@ p {
 .header__informations .image {
   width: 100%;
   height: 18rem;
+}
+@media only screen and (min-width: 992px) {
+  .header__informations .image {
+    height: 30rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header__informations .image img {
+    border-radius: 0 0 30rem 30rem;
+  }
 }
 
 .menus__heading {
