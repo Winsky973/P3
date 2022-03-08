@@ -42,6 +42,7 @@
             }
         }
         &__card {
+            animation: trans 2s ease-out;
             position: relative;
             overflow: hidden;
             & span {
@@ -56,8 +57,20 @@
             &:hover>.informations {
                 width: 80%;
                 @include mobile-only {
-                    width: 70%;
+                    width: 75%;
                 }
+                @include desktop-only {
+                    width: 90%;
+                }
+            }
+            &-1 {
+                animation-duration: 1s;
+            }
+            &-2 {
+                animation-duration: 1.5s;
+            }
+            &-3 {
+                animation-duration: 2s;
             }
         }
         &__prix {
@@ -77,5 +90,24 @@
                 padding: .5rem 0;
             }
         }
+    }
+}
+
+@keyframes trans {
+    0% {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY();
+        opacity: 0;
+    }
+    75% {
+        transform: translateY();
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

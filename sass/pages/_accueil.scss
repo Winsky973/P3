@@ -5,6 +5,18 @@
     }
 }
 
+.omelette__container {
+    position: relative;
+}
+
+.omelette__jaune {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50px;
+    border: 1rem solid #9356DC;
+}
+
 .fonction {
     flex: 1;
     &__heading {
@@ -17,11 +29,14 @@
         row-gap: 1.5rem;
         @include tablette-only {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
         &__items {
             @include tablette-only {
-                margin-right: 1rem;
+                margin-right: 1.5rem;
+            }
+            @include tablette-only (621px) {
+                width: 100%;
             }
             & p {
                 margin-left: 1rem;
@@ -41,6 +56,10 @@
                 padding: 1rem;
                 background-color: #9356DC;
                 border-radius: 50rem;
+                @include tablette-only {
+                    position: relative;
+                    left: -2rem;
+                }
             }
             &__letter span {
                 color: white;
@@ -69,6 +88,9 @@
         &__container {
             @include desktop-only {
                 width: 33%;
+            }
+            @include tablette-only {
+                width: 49%;
             }
         }
     }

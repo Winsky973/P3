@@ -52,6 +52,7 @@
     background-color: white;
     display: flex;
     align-items: center;
+    cursor: pointer;
     transition: background-color .1.7s ease-in-out;
     @include shadow-primary;
     &:hover {
@@ -81,6 +82,9 @@
         &:hover i {
             color: $color-primary;
         }
+        @include tablette-only {
+            padding: 2rem 1rem;
+        }
     }
     &--white {
         padding: 1rem;
@@ -99,37 +103,6 @@
         margin-bottom: 1em;
         &:hover {
             background-color: white;
-        }
-        /*@include desktop-only {
-            width: 22rem;
-        }*/
-        @include tablette-only (991px) {
-            width: 28rem;
-            margin-bottom: 2rem;
-        }
-        @include tablette-only(950px) {
-            width: 27rem;
-        }
-        @include tablette-only(920px) {
-            width: 26rem;
-        }
-        @include tablette-only(888px) {
-            width: 25rem;
-        }
-        @include tablette-only(860px) {
-            width: 23rem;
-        }
-        @include tablette-only(800px) {
-            width: 21.8rem;
-        }
-        @include tablette-only(750px) {
-            width: 20rem;
-        }
-        @include tablette-only(692px) {
-            width: 18rem;
-        }
-        @include tablette-only(650px) {
-            width: 17rem;
         }
     }
 }

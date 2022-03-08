@@ -3,10 +3,17 @@
     color: white;
     &__container {
         &__list {
+            transition: all .5s ease-in-out;
             list-style: none;
             margin-top: 1rem;
             & li {
                 margin: .3em 0;
+                & a {
+                    color: white;
+                }
+                &:hover {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
