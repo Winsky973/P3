@@ -5,18 +5,6 @@
     }
 }
 
-.omelette__container {
-    position: relative;
-}
-
-.omelette__jaune {
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50px;
-    border: 1rem solid #9356DC;
-}
-
 .fonction {
     flex: 1;
     &__heading {
@@ -40,6 +28,7 @@
             }
             & p {
                 margin-left: 1rem;
+                font-weight: bold;
             }
             & i {
                 color: darken($color-header_secondary, 50);
@@ -86,6 +75,7 @@
             justify-content: space-between;
         }
         &__container {
+            margin-bottom: 1em;
             @include desktop-only {
                 width: 33%;
             }

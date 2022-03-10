@@ -12,6 +12,9 @@
         background-color: $color-heading;
         padding: 1rem 0;
         @include shadow-heading();
+        & p {
+            font-weight: 500;
+        }
     }
     &__location i {
         padding-right: 1em;
