@@ -3,6 +3,10 @@
         display: flex;
         margin-top: 2rem;
     }
+    @include desktopxl-only {
+        display: flex;
+        margin-top: 2rem;
+    }
 }
 
 .fonction {
@@ -74,9 +78,20 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
+        @include desktopxl-only {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
         &__container {
             margin-bottom: 1em;
-            @include desktop-only {
+            @include desktop-only (992px, 1215px) {
+                width: 49%;
+            }
+            @include desktop-only (1215px) {
+                width: 33%;
+            }
+            @include desktopxl-only {
                 width: 33%;
             }
             @include tablette-only {

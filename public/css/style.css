@@ -224,12 +224,12 @@ p {
     transform: rotate(360deg);
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1443px) {
   .main-container {
     display: flex;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1443px) {
   .main-container--menus {
     margin-top: 0;
     transition: all 2s ease-out;
@@ -264,7 +264,7 @@ p {
   top: -4rem;
   border-radius: 2rem 2rem 0 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1443px) {
   .box--colored {
     margin: 0 15rem;
   }
@@ -338,7 +338,7 @@ p {
   padding: 1rem;
   align-items: flex-start;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1443px) {
   .card--white {
     height: 5rem;
   }
@@ -364,7 +364,13 @@ p {
     transform: translateX(100%);
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1443px) {
+  .main-container {
+    display: flex;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 1444px) {
   .main-container {
     display: flex;
     margin-top: 2rem;
@@ -443,7 +449,14 @@ p {
     justify-content: space-between;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1443px) {
+  .grid__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1444px) {
   .grid__items {
     display: flex;
     flex-wrap: wrap;
@@ -453,7 +466,17 @@ p {
 .grid__items__container {
   margin-bottom: 1em;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1215px) {
+  .grid__items__container {
+    width: 49%;
+  }
+}
+@media only screen and (min-width: 1215px) and (max-width: 1443px) {
+  .grid__items__container {
+    width: 33%;
+  }
+}
+@media only screen and (min-width: 1444px) {
   .grid__items__container {
     width: 33%;
   }
@@ -464,7 +487,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1443px) {
   .menus {
     display: block;
     margin-top: -5rem;
@@ -481,12 +504,12 @@ p {
   width: 100%;
   height: 18rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1443px) {
   .header__informations .image {
     height: 30rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1443px) {
   .header__informations .image img {
     border-radius: 0 0 30rem 30rem;
   }
