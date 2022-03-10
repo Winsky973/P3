@@ -193,7 +193,7 @@ p {
   opacity: 0;
   height: 50px;
   width: 50px;
-  border: solid 0.3rem white;
+  border: solid 0.3rem #99E2D0;
   animation: square-rotate 5s linear;
 }
 
@@ -211,11 +211,11 @@ p {
     transform: scale(0);
     opacity: 0;
   }
-  30% {
+  10% {
     transform: scale(1);
     opacity: 1;
   }
-  31% {
+  11% {
     transform: rotate(360deg);
   }
 }

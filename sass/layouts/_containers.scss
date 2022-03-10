@@ -13,7 +13,7 @@
         opacity: 0;
         height: 50px;
         width: 50px;
-        border: solid .3rem white;
+        border: solid .3rem $color-tertiary;
         animation: square-rotate 5s linear;
     }
 }
@@ -33,11 +33,11 @@
         transform: scale(0);
         opacity: 0;
     }
-    30% {
+    10% {
         transform: scale(1);
         opacity: 1;
     }
-    31% {
+    11% {
         transform: rotate(360deg)
     }
 }
