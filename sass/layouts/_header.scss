@@ -1,4 +1,5 @@
 .header {
+    width: 100%;
     display: flex;
     flex-direction: column;
     &__heading {
@@ -14,6 +15,10 @@
         @include shadow-heading();
         & p {
             font-weight: 500;
+            color: $color-text-heading;
+        }
+        & .fas {
+            color: $color-text-heading;
         }
     }
     &__location i {

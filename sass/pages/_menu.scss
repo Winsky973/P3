@@ -7,6 +7,17 @@
 }
 
 .header {
+    &__heading {
+        h1 {
+            justify-self: center;
+        }
+        &--menus {
+            align-items: center;
+        }
+        & .fas {
+            justify-self: flex-start;
+        }
+    }
     &__informations--fix {
         position: relative;
         width: 100%;
