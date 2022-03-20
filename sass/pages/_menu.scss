@@ -16,6 +16,8 @@
         }
         & .fas {
             justify-self: flex-start;
+            position: relative;
+            right: 9rem;
         }
     }
     &__informations--fix {
