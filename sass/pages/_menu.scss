@@ -4,6 +4,11 @@
         margin-top: -5rem;
         width: 100%;
     }
+    @include desktopxl-only {
+        display: block;
+        margin-top: -5rem;
+        width: 100%;
+    }
 }
 
 .header {
@@ -31,8 +36,14 @@
         @include desktop-only {
             height: 30rem;
         }
+        @include desktopxl-only {
+            height: 30rem;
+        }
         & img {
             @include desktop-only {
+                border-radius: 0 0 30rem 30rem;
+            }
+            @include desktopxl-only {
                 border-radius: 0 0 30rem 30rem;
             }
         }
@@ -74,6 +85,9 @@
                 }
                 @include tablette-only {
                     width: 80%;
+                }
+                @include desktopxl-only {
+                    width: 85%;
                 }
             }
             &-1 {
