@@ -35,6 +35,14 @@
 
 .box {
     padding: 2rem 1.5rem;
+    &--header {
+        @include desktop-only {
+            margin: 0 15rem;
+        }
+        @include desktopxl-only {
+            margin: 0 30rem;
+        }
+    }
     &--colored {
         background-color: $color-header_secondary;
         margin-top: -4rem;

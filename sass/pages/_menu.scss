@@ -13,12 +13,11 @@
 
 .header {
     &__heading {
-        display: flex;
-        h1 {
-            justify-self: center;
-        }
         &--menus {
             align-items: center;
+            align-items: center;
+            width: 60%;
+            justify-content: space-between;
         }
         & a {
             align-self: flex-start;

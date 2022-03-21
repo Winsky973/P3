@@ -138,15 +138,10 @@ p {
   -webkit-background-clip: text;
 }
 
-.header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 .header__heading {
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 }
 .header__location {
   display: flex;
@@ -305,6 +300,16 @@ p {
 
 .box {
   padding: 2rem 1.5rem;
+}
+@media only screen and (min-width: 992px) and (max-width: 1443px) {
+  .box--header {
+    margin: 0 15rem;
+  }
+}
+@media only screen and (min-width: 1444px) {
+  .box--header {
+    margin: 0 30rem;
+  }
 }
 .box--colored {
   background-color: #f6f6f6;
@@ -549,14 +554,11 @@ p {
   }
 }
 
-.header__heading {
-  display: flex;
-}
-.header__heading h1 {
-  justify-self: center;
-}
 .header__heading--menus {
   align-items: center;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
 }
 .header__heading a {
   align-self: flex-start;
