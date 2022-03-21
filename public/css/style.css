@@ -549,16 +549,17 @@ p {
   }
 }
 
+.header__heading {
+  display: flex;
+}
 .header__heading h1 {
   justify-self: center;
 }
 .header__heading--menus {
   align-items: center;
 }
-.header__heading .fas {
-  justify-self: flex-start;
-  position: relative;
-  right: 9rem;
+.header__heading a {
+  align-self: flex-start;
 }
 .header__informations--fix {
   position: relative;

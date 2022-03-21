@@ -13,16 +13,15 @@
 
 .header {
     &__heading {
+        display: flex;
         h1 {
             justify-self: center;
         }
         &--menus {
             align-items: center;
         }
-        & .fas {
-            justify-self: flex-start;
-            position: relative;
-            right: 9rem;
+        & a {
+            align-self: flex-start;
         }
     }
     &__informations--fix {
