@@ -401,7 +401,7 @@ p {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  height: 15rem;
+  height: 16rem;
   padding: 0%;
 }
 .card--simple:hover {
@@ -520,22 +520,22 @@ p {
 }
 @media only screen and (min-width: 992px) and (max-width: 1215px) {
   .grid__items__container {
-    width: 49%;
+    width: 48%;
   }
 }
 @media only screen and (min-width: 1215px) and (max-width: 1443px) {
   .grid__items__container {
-    width: 33%;
+    width: 32%;
   }
 }
 @media only screen and (min-width: 1444px) {
   .grid__items__container {
-    width: 33%;
+    width: 32%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 991px) {
   .grid__items__container {
-    width: 49%;
+    width: 48%;
   }
 }
 

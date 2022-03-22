@@ -64,7 +64,7 @@
 .grid {
     flex: 2;
     &__heading {
-        margin: 0 0 1.5rem 00;
+        margin: 0 0 1.5rem 0;
     }
     background-color: $color-header_secondary;
     &__items {
@@ -86,16 +86,16 @@
         &__container {
             margin-bottom: 1em;
             @include desktop-only (992px, 1215px) {
-                width: 49%;
+                width: 48%;
             }
             @include desktop-only (1215px) {
-                width: 33%;
+                width: 32%;
             }
             @include desktopxl-only {
-                width: 33%;
+                width: 32%;
             }
             @include tablette-only {
-                width: 49%;
+                width: 48%;
             }
         }
     }
