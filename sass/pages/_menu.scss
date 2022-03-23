@@ -77,15 +77,18 @@
                 transform: rotate(400deg);
             }
             &:hover>.informations {
-                width: 80%;
+                width: 90%;
                 @include mobile-only {
                     width: 75%;
                 }
                 @include tablette-only {
-                    width: 80%;
+                    width: 90%;
                 }
                 @include desktopxl-only {
                     width: 85%;
+                }
+                @include desktopxl-only(1600px) {
+                    width: 90%;
                 }
             }
             &-1 {

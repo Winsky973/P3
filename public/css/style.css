@@ -339,7 +339,7 @@ p {
   white-space: nowrap;
   width: 100%;
   transition: width 0.4s ease-in-out;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem 0.5rem 1rem;
 }
 .informations h3 {
   overflow: hidden;
@@ -651,7 +651,7 @@ p {
   transform: rotate(400deg);
 }
 .menus__grid__card:hover > .informations {
-  width: 80%;
+  width: 90%;
 }
 @media (max-width: 599px) {
   .menus__grid__card:hover > .informations {
@@ -660,12 +660,17 @@ p {
 }
 @media only screen and (min-width: 600px) and (max-width: 991px) {
   .menus__grid__card:hover > .informations {
-    width: 80%;
+    width: 90%;
   }
 }
 @media only screen and (min-width: 1444px) {
   .menus__grid__card:hover > .informations {
     width: 85%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .menus__grid__card:hover > .informations {
+    width: 90%;
   }
 }
 .menus__grid__card-1 {
