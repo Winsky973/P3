@@ -651,7 +651,7 @@ p {
   transform: rotate(400deg);
 }
 .menus__grid__card:hover > .informations {
-  width: 90%;
+  width: 88%;
 }
 @media (max-width: 599px) {
   .menus__grid__card:hover > .informations {

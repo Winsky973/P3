@@ -77,7 +77,7 @@
                 transform: rotate(400deg);
             }
             &:hover>.informations {
-                width: 90%;
+                width: 88%;
                 @include mobile-only {
                     width: 75%;
                 }
