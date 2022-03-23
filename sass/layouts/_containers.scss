@@ -68,6 +68,7 @@
     white-space: nowrap;
     width: 100%;
     transition: width .4s ease-in-out;
+    padding: 1rem 1rem;
     & h3 {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -113,11 +114,7 @@
         }
     }
     &--white {
-        padding: 1rem 0;
         align-items: flex-start;
-        @include desktop-only {
-            height: 5rem;
-        }
     }
     &--simple {
         position: relative;

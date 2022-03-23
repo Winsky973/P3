@@ -339,6 +339,7 @@ p {
   white-space: nowrap;
   width: 100%;
   transition: width 0.4s ease-in-out;
+  padding: 1rem 1rem;
 }
 .informations h3 {
   overflow: hidden;
@@ -387,13 +388,7 @@ p {
   }
 }
 .card--white {
-  padding: 1rem 0;
   align-items: flex-start;
-}
-@media only screen and (min-width: 992px) and (max-width: 1443px) {
-  .card--white {
-    height: 5rem;
-  }
 }
 .card--simple {
   position: relative;
